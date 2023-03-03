@@ -1,7 +1,9 @@
 
 :root{
     --player1: #ffd06b;
+    --player1_shadow: #ffd06b;
     --player2: #f76788;
+    --player2_shadow: #f76788;
     --color2: #fdfc6a;
     --color3: #0903a8;
     --background_all: #733ef0;
@@ -14,10 +16,9 @@ body{
     flex-direction: column;
     background-color: var(--background_all);
 }
-.cabecera{
-    width: 100%;
-    height: 10%;
-}
+
+
+
 
 .cuerpo{
     display: flex;
@@ -32,15 +33,3 @@ body{
 }
 
 
-.ficha_1{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-color: var(--player1);
-}
-.ficha_2{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-color: var(--player2);
-}

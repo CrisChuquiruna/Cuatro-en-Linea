@@ -1,0 +1,22 @@
+.player_1{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--player1);
+
+    border-radius: 100%;
+    border: black 3px;
+    border-style:groove;
+    box-sizing: border-box;
+}
+.player_2{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--player2);
+
+    border-radius: 100%;
+    border: black 3px;
+    border-style:groove;
+    box-sizing: border-box;
+}
