@@ -17,17 +17,34 @@ body{
     background-color: var(--background_all);
 }
 
-
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .cuerpo{
     display: flex;
+    justify-content: center;
     width: 100%;    
     height: 80%;
 }
+
 .izq{    
     width: 30%;
+
 }
+.notificacion{
+    font-size: 200%;
+    margin: 5px;
+    font-weight: bold;
+
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000
+}
+
 .der{    
     width: 30%;
 }

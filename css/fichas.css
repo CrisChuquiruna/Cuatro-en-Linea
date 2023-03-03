@@ -8,6 +8,7 @@
     border: black 3px;
     border-style:groove;
     box-sizing: border-box;
+
 }
 .player_2{
     width: 50px;
@@ -19,4 +20,5 @@
     border: black 3px;
     border-style:groove;
     box-sizing: border-box;
+
 }
