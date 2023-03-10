@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     
-    width: 529px;
+    width: 100%;
     height: 450px;
 
     background-color: white;
@@ -28,8 +28,8 @@
 .espacios{
     background-color: var(--background_all);
 
-    width: 50px;
-    height: 50px;
+    width: var(--fichaWidth);
+    height: var(--fichaWidth);
     
     border-radius: 100%;
     border: black 3px;
@@ -37,3 +37,10 @@
     border-top-width: 10px;
     box-sizing: border-box;
 }
+
+
+@media screen and (max-width: 600px) {
+    .tablero{
+        height: 350px;
+    }
+  }

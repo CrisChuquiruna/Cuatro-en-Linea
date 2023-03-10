@@ -1,0 +1,22 @@
+.restart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background_all_dark);
+    width: 100px;
+    height: 35px;
+    
+    border-radius: 800px;
+
+    text-align: center;
+    color: white;
+    font-size: 15px;
+
+    cursor: default;
+    user-select: none; 
+}
+
+.restart:active{
+    background-color: #5229b9;
+}

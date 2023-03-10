@@ -8,4 +8,9 @@ Tablero.inicializarTableros();
 GenerandoIngresoDeFichaEvents();
 GenerandoEfectosDeIngresoDeFicha();
 
+let button_restart = document.querySelector('.restart')
+button_restart.addEventListener('click', (event)=>{
+    Tablero.inicializarTableros();
+})
+
 

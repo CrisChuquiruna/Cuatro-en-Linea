@@ -1,5 +1,6 @@
 import { Counter } from "./Counter.js";
 import { Buscador } from "./Buscador.js";
+import { winEvent } from "./WinEvent.js";
 
 export class Tablero{
     static tablero = [
@@ -15,6 +16,7 @@ export class Tablero{
     max_column =7;
 
     static inicializarTableros(){
+        winEvent.deleteAlertOfWin();
         Tablero.tablero_ayuda = [
             ['empty', 'empty', 'empty', 'empty', 'empty', 'empty', 'empty'],
             ['empty', 'empty', 'empty', 'empty', 'empty', 'empty', 'empty'],
@@ -61,14 +63,7 @@ export class Tablero{
         }
         
         if(Buscador.isWin(this.tablero_ayuda)){
-            console.log("GANASTE ", Counter.winner)
-            let cartelGanaste = document.querySelector('.notificacion');
-            cartelGanaste.innerHTML = "GANASTE " + Counter.winner;            
-            if(Counter.winner == 'Player 1'){
-                cartelGanaste.style.color = 'var(--player1)';
-            }else{
-                cartelGanaste.style.color = 'var(--player2)';
-            }
+            winEvent.createAlertOfWin();
         }
     }
 }
