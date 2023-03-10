@@ -35,7 +35,7 @@ body{
 
 
 @media screen and (max-width: 600px) {
-    .cuerpo {
+    .container {
         flex-direction: column;
     }
 
