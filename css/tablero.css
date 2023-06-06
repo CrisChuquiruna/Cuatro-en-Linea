@@ -9,7 +9,7 @@
 
     background-color: white;
     border: black 5px;
-    border-style:groove;
+    border-style:solid;
     border-radius: 30px;
 
     padding-top: 2vh;
@@ -33,7 +33,7 @@
     
     border-radius: 100%;
     border: black 3px;
-    border-style:groove;
+    border-style:solid;
     border-top-width: 10px;
     box-sizing: border-box;
 }

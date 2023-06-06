@@ -1,16 +1,15 @@
 import { Tablero } from './Tablero.js'
 import { GenerandoIngresoDeFichaEvents,GenerandoEfectosDeIngresoDeFicha } from './IngresoDeFichaEvent.js';
+import { inicializarBotones } from './Buttons.js';
 
 let turnoDelJugador_1 = true;
 
 Tablero.inicializarTableros();
 
+inicializarBotones();
 GenerandoIngresoDeFichaEvents();
 GenerandoEfectosDeIngresoDeFicha();
 
-let button_restart = document.querySelector('.restart')
-button_restart.addEventListener('click', (event)=>{
-    Tablero.inicializarTableros();
-})
+
 
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root{
     --player1: #ffd06b;
@@ -10,6 +11,7 @@
     --background_all_dark: #5c2cd5;
 
     --fichaWidth: 50px;
+    --text_font: 'Press Start 2P', cursive;
 }
 
 body{
@@ -17,6 +19,8 @@ body{
     height: 100vh;
     flex-direction: column;
     background-color: var(--background_all);
+
+    font-family: var(--text_font);
 }
 
 .container{
@@ -24,15 +28,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-.game_container{
-    flex-direction: column;
-
-    width: 40%;
-    height: 100%;
-}
-
-
 
 @media screen and (max-width: 600px) {
     .container {

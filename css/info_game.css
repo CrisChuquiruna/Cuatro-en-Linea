@@ -1,21 +1,16 @@
-
-.info_game{   
-    width: 30%;
+.game{
+    display: none;
 }
 
-
-.notificacion{
-    width: 100%;
-    font-size: 200%;
-    margin: 5px;
-    font-weight: bold;
-
-    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
-             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000
+.game_container{
+    flex-direction: column;
+    
+    width: 40%;
+    height: 100%;
 }
+
 @media screen and (max-width: 600px) {
-    .info_game{   
-        text-align: center;
-        width: 100%;
+    .game_container{
+        width: 80%;
     }
-}
+  }

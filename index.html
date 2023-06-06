@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/tablero.css">
     <link rel="stylesheet" href="css/fichas.css">
+    <link rel="stylesheet" href="css/cartel.css">
     <link rel="stylesheet" href="css/cabecera.css">
     <link rel="stylesheet" href="css/seleccion.css">
     <link rel="stylesheet" href="css/info_game.css">
@@ -15,90 +18,96 @@
     <title>Cuatro en Linea</title>
 </head>
 <body>
-    <header class="cabecera container">
-        <div class="restart">RESTART</div>
-    </header>
-    <section class="container">
-        <div class="info_game">            
+    <section class="menu container">
+        <div class="play button">Jugar</div>
+    </section>
+    <section class="game">
+        <header class="cabecera container">
+            <div class="restart button">RESTART</div>
+        </header>
+        
+        <div class="cartel_container container">                                    
             <div class="notificacion"></div>
-        </div>
-
-        <div class="game_container container">
-            <div class="seleccion">
-                <div class="columna_0 columna"></div>
-                <div class="columna_1 columna"></div>
-                <div class="columna_2 columna"></div>
-                <div class="columna_3 columna"></div>
-                <div class="columna_4 columna"></div>
-                <div class="columna_5 columna"></div>
-                <div class="columna_6 columna"></div>
+        </div>         
+        
+        
+        <div class="container">
+            <div class="container game_container">
+                <div class="seleccion">
+                    <div class="columna_0 columna"></div>
+                    <div class="columna_1 columna"></div>
+                    <div class="columna_2 columna"></div>
+                    <div class="columna_3 columna"></div>
+                    <div class="columna_4 columna"></div>
+                    <div class="columna_5 columna"></div>
+                    <div class="columna_6 columna"></div>
+                </div>
+                <div class="tablero">                
+                    <div class="filas">
+                        <div class="espacio_0_0 espacios"></div>
+                        <div class="espacio_0_1 espacios"></div>
+                        <div class="espacio_0_2 espacios"></div>
+                        <div class="espacio_0_3 espacios"></div>
+                        <div class="espacio_0_4 espacios"></div>
+                        <div class="espacio_0_5 espacios"></div>
+                        <div class="espacio_0_6 espacios"></div>
+                    </div>            
+                    <div class="filas">
+                        <div class="espacio_1_0 espacios"></div>
+                        <div class="espacio_1_1 espacios"></div>
+                        <div class="espacio_1_2 espacios"></div>
+                        <div class="espacio_1_3 espacios"></div>
+                        <div class="espacio_1_4 espacios"></div>
+                        <div class="espacio_1_5 espacios"></div>
+                        <div class="espacio_1_6 espacios"></div>
+                    </div>            
+                    <div class="filas">
+                        <div class="espacio_2_0 espacios"></div>
+                        <div class="espacio_2_1 espacios"></div>
+                        <div class="espacio_2_2 espacios"></div>
+                        <div class="espacio_2_3 espacios"></div>
+                        <div class="espacio_2_4 espacios"></div>
+                        <div class="espacio_2_5 espacios"></div>
+                        <div class="espacio_2_6 espacios"></div>
+                    </div>            
+                    <div class="filas">
+                        <div class="espacio_3_0 espacios"></div>
+                        <div class="espacio_3_1 espacios"></div>
+                        <div class="espacio_3_2 espacios"></div>
+                        <div class="espacio_3_3 espacios"></div>
+                        <div class="espacio_3_4 espacios"></div>
+                        <div class="espacio_3_5 espacios"></div>
+                        <div class="espacio_3_6 espacios"></div>
+                    </div>            
+                    <div class="filas">
+                        <div class="espacio_4_0 espacios"></div>
+                        <div class="espacio_4_1 espacios"></div>
+                        <div class="espacio_4_2 espacios"></div>
+                        <div class="espacio_4_3 espacios"></div>
+                        <div class="espacio_4_4 espacios"></div>
+                        <div class="espacio_4_5 espacios"></div>
+                        <div class="espacio_4_6 espacios"></div>
+                    </div>            
+                    <div class="filas">
+                        <div class="espacio_5_0 espacios"></div>
+                        <div class="espacio_5_1 espacios"></div>
+                        <div class="espacio_5_2 espacios"></div>
+                        <div class="espacio_5_3 espacios"></div>
+                        <div class="espacio_5_4 espacios"></div>
+                        <div class="espacio_5_5 espacios"></div>
+                        <div class="espacio_5_6 espacios"></div>
+                    </div>            
+                        
+                    <!-- <div class="ficha_1"></div>
+                        <div class="ficha_2"></div> -->
+                </div>
             </div>
-            <div class="tablero">                
-                <div class="filas">
-                    <div class="espacio_0_0 espacios"></div>
-                    <div class="espacio_0_1 espacios"></div>
-                    <div class="espacio_0_2 espacios"></div>
-                    <div class="espacio_0_3 espacios"></div>
-                    <div class="espacio_0_4 espacios"></div>
-                    <div class="espacio_0_5 espacios"></div>
-                    <div class="espacio_0_6 espacios"></div>
-                </div>            
-                <div class="filas">
-                    <div class="espacio_1_0 espacios"></div>
-                    <div class="espacio_1_1 espacios"></div>
-                    <div class="espacio_1_2 espacios"></div>
-                    <div class="espacio_1_3 espacios"></div>
-                    <div class="espacio_1_4 espacios"></div>
-                    <div class="espacio_1_5 espacios"></div>
-                    <div class="espacio_1_6 espacios"></div>
-                </div>            
-                <div class="filas">
-                    <div class="espacio_2_0 espacios"></div>
-                    <div class="espacio_2_1 espacios"></div>
-                    <div class="espacio_2_2 espacios"></div>
-                    <div class="espacio_2_3 espacios"></div>
-                    <div class="espacio_2_4 espacios"></div>
-                    <div class="espacio_2_5 espacios"></div>
-                    <div class="espacio_2_6 espacios"></div>
-                </div>            
-                <div class="filas">
-                    <div class="espacio_3_0 espacios"></div>
-                    <div class="espacio_3_1 espacios"></div>
-                    <div class="espacio_3_2 espacios"></div>
-                    <div class="espacio_3_3 espacios"></div>
-                    <div class="espacio_3_4 espacios"></div>
-                    <div class="espacio_3_5 espacios"></div>
-                    <div class="espacio_3_6 espacios"></div>
-                </div>            
-                <div class="filas">
-                    <div class="espacio_4_0 espacios"></div>
-                    <div class="espacio_4_1 espacios"></div>
-                    <div class="espacio_4_2 espacios"></div>
-                    <div class="espacio_4_3 espacios"></div>
-                    <div class="espacio_4_4 espacios"></div>
-                    <div class="espacio_4_5 espacios"></div>
-                    <div class="espacio_4_6 espacios"></div>
-                </div>            
-                <div class="filas">
-                    <div class="espacio_5_0 espacios"></div>
-                    <div class="espacio_5_1 espacios"></div>
-                    <div class="espacio_5_2 espacios"></div>
-                    <div class="espacio_5_3 espacios"></div>
-                    <div class="espacio_5_4 espacios"></div>
-                    <div class="espacio_5_5 espacios"></div>
-                    <div class="espacio_5_6 espacios"></div>
-                </div>            
-                    
-                <!-- <div class="ficha_1"></div>
-                    <div class="ficha_2"></div> -->
+    
+            <div class="info_game">
             </div>
-        </div>
-
-        <div class="info_game">
         </div>
     </section>
 
-    <div class="timer"></div>
     <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

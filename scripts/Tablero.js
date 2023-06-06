@@ -16,6 +16,7 @@ export class Tablero{
     max_column =7;
 
     static inicializarTableros(){
+        console.log("VACIAR TABLERO")
         winEvent.deleteAlertOfWin();
         Tablero.tablero_ayuda = [
             ['empty', 'empty', 'empty', 'empty', 'empty', 'empty', 'empty'],

@@ -3,8 +3,12 @@ import { Counter } from "./Counter.js";
 export class winEvent{        
 
     static createAlertOfWin(){
+        document.querySelector('.seleccion').style.pointerEvents = "none";        
+    
+
+        document.querySelector('.cartel_container').style.display = 'flex';
         let cartelGanaste = document.querySelector('.notificacion');
-        cartelGanaste.innerHTML = "GANASTE " + Counter.winner;   
+        cartelGanaste.innerHTML =  Counter.winner + " WIN";   
         if(Counter.winner == 'Player 1'){
             cartelGanaste.style.color = 'var(--player1)';
         }else{
